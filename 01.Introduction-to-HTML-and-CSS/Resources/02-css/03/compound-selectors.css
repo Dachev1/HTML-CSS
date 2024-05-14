@@ -1,0 +1,31 @@
+[type="text"] {
+    display: block;
+    margin: 1em;
+    padding: 0.5em;
+    border: 2px solid green;   
+}
+
+ul li:nth-child(1) {
+    color: aqua;
+}
+
+ul li:nth-child(3) {
+    color: red;
+}
+
+.highlight,
+#special {
+    font-weight: bold;
+}
+
+p.highlight {
+    color: lightsalmon;
+    font-size: 2em;
+}
+
+div#special {
+    padding: 1em;
+    margin: 1em;
+    background-color: orange;
+}
+

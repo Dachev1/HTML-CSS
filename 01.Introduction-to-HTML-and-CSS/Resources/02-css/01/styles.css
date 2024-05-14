@@ -1,0 +1,31 @@
+h1 {
+    color: orange;
+}
+
+p {
+    font-size: 2em;
+}
+
+div {
+    background-color: gold;
+}
+
+ul {
+    list-style-type: georgian;
+}
+
+ul li {
+    color: red;
+}
+
+.highlight {
+    color: rebeccapurple;
+}
+
+#main-title {
+    color: greenyellow;
+}
+
+#special-paragraph {
+    font-style: italic;
+}

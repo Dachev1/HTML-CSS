@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+ul {
+list-style-type: none;
+}
+
+section p {
+    color: green;
+}
+
+ul > li {
+    font-weight: bold;
+    font-style: italic;
+}
+
+article + article + article {
+    background-color: palevioletred;
+}
+
+ul li {
+    margin: 0.3em;
+}
+
+h2 ~ p{
+    color: blue;
+}
+
+ul.level-1 > li:nth-child(2) {
+    color: red;
+}
+
+ul ul li a{
+    text-decoration: none;
+}
+
+ul ul li:nth-child(3) a {
+    color: green;
+}

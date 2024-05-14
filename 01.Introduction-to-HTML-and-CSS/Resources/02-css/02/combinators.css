@@ -1,0 +1,22 @@
+
+div {
+    margin: 1em;
+    border: 1px solid #CCC;
+}
+
+div p {
+    color: blue;
+}
+
+ul > li {
+    list-style-type: circle;
+}
+
+p > span {
+    color: red;
+}
+
+p + span {
+    background-color: aqua;
+    font-weight: bold;
+}
