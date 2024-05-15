@@ -11,13 +11,7 @@ header {
     margin: 1em;
 }
 
-article {
-    border: 1px solid #ccc;
-    margin: 1em;
-    padding: 1em;
-}
-
-footer {
+article, footer {
     border: 1px solid #ccc;
     margin: 1em;
     padding: 1em;
