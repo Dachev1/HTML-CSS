@@ -1,0 +1,53 @@
+@import url(reset.css);
+@import url(typography.css);
+
+body {
+    padding: 1em;
+}
+
+thead {
+    background-color: lightgrey;
+}
+
+blockquote {
+    border-left: 3px solid #ccc;
+    padding: 1.5rem;
+    font-style: italic;
+}
+
+table tbody th {
+    font-weight: normal;
+}
+
+th, td {
+    padding: 0.2em;
+}
+
+ul {
+    list-style: square;
+}
+
+ul ul {
+    list-style: disc;
+}
+
+ul ul ul {
+    list-style: circle;
+}
+
+table, tbody th, td {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.author {
+    font-weight: bold;
+    text-align: right;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: whitesmoke;
+}

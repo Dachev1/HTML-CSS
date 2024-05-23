@@ -1,0 +1,17 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+div {
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.visible {overflow: visible;}
+.hidden {overflow: hidden;}
+.scroll {overflow: scroll;}
