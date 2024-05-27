@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5em;
+}
+
+.box div {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px dashed black;
+    padding: 0em 2em 2em 2em;
+}
+
+.box div::before {
+    display: block;
+    padding-bottom: 1em;
+    margin-left: -1.2em;
+}
+
+.box .margin {
+    background-color: #ff966f;
+}
+
+.box .border {
+    background-color: #ffe8c6;
+}
+
+.box .padding {
+    background-color: #85eb85;
+}
+
+.box .content {
+    background-color: #a3d2e2;
+    text-align: center;
+    padding: 1.3em;
+}
+
+.box .margin::before {
+    content: 'margin';
+}
+
+.box .padding::before {
+    content: 'padding';
+}
+
+.box .border::before {
+    content: 'border';
+}

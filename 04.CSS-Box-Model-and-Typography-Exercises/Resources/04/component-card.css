@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.2 -apple-system;
+}
+
+body {
+    font: inherit;
+    background-color: lightgrey;
+    padding: 5em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+span {
+    display: block;
+}
+
+.card {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 0.3em;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card .card-content,
+.card .card-footer {
+    padding: 1.5em;
+}
+
+.card .card-title {
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+.card .card-footer {
+    overflow: hidden;
+}
+
+.card .card-footer span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: italic;
+}
+
+.card:hover {
+    background-color: #ccc;
+}
+
