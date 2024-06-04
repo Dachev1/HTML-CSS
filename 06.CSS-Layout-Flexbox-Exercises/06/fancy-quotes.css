@@ -1,0 +1,89 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5em;
+    font: 14px/1.5 Arial;
+    background-color: #eee;
+}
+
+svg {
+    width: 7%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+i {
+    font-size: 2em;
+}
+
+.site {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2em;
+}
+
+.site > main {
+    flex: 0 0 70%;
+}
+
+.site > aside {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+article {
+    background-color: #fff;
+    padding: 2em;
+}
+
+.site > main article {
+    display: flex;
+    gap: 2em;
+}
+
+article .media {
+    flex: 0 0 12em;
+}
+
+article .avatar {
+    height: 100%;
+    min-height: 6em;
+    background-color: #090;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0 , 0.2);
+    overflow: hidden;
+    border: 0.3em solid #fff;
+}
+
+article .avatar img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+article p {
+    padding-bottom: 1.5em;
+}
+
+article + article {
+    margin-top: 2em;
+}
+
+.site aside article .media {
+    padding-top: 2em;
+}
+
+.site aside article .avatar {
+    min-height: 4em;
+}
+
+
