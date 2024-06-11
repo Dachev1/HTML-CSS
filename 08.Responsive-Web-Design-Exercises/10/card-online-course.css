@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* , *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+    font: 14px/1.5  "PT Sans", sans-serif
+}
+
+body {
+    background-color: #eee;
+    padding: 2em;
+}
+
+section {
+    padding: 1em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+svg {
+    display: inline-block;
+    width:  1.2em;
+    height: 1.2em;
+}
+
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.card {
+    max-width: 1000px;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 20px 50px 0px;
+    transition: all 0.15s ease-in 0s;
+    border-radius: 0.4em;
+    padding: 0.7em;
+}
+
+.card-header {
+    margin-bottom: -4em;
+}
+
+.card-content {
+    padding: 0.5em 1em;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0.3em;
+    line-height: 1;
+    padding: 0.3em;
+}
+
+.section-content {
+    opacity: 0.7;
+    padding: 0.5em;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    background-color: #fdfdfd;
+    border-radius: 0.3em;
+    margin-top: 0.5em;
+}
+
+.section-content .group-titles,
+.section-content .info,
+ .section-content .price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-content .price-box {
+    padding: 0.5em;
+    color: rgb(22, 199, 154);
+    fill: rgb(22, 199, 154);
+    font-weight: bold;
+}
+
+.section-content .price-box .value-price {
+    font-size: 1.5em;
+}
+
+.section-content .price-box svg {
+    vertical-align: -0.250em;
+}
+
+.section-content .info .price {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.section-header .title {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.card-header .author {
+    font-size: 1.1em;
+    font-weight: bolder;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+    z-index: 1;
+    border-radius: 0.3em;
+    padding: 0.3em 1em 0.3em 0.8em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0.5em 0.1em
+}
+
+.card-header .media {
+    border-radius: 0.3em;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-header .media-title {
+    position: relative;
+    background-color: #fff;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    padding: 0.9em;
+    margin: 0.7em;
+    top: -3em;
+    right: 0;
+}
+
+.section-header span a {
+    display: block;
+    font-size: 0.9em;
+    color: rgb(22, 199, 154);
+    text-decoration: none;
+}
+
+.card-header  .media-title h1 {
+    font-weight: bold;
+    font-size: 1.6em;
+    line-height: 1.1;
+    margin-bottom: 0.2em;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    padding: 0px 0px 0.1em;
+    position: relative;
+   
+}
+
+.card-header  .media-title p {
+    line-height: 1.35;
+}
+
+.section-content .info span {
+    display: block;
+}
+
+.card-header .media::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.7;
+    color: #fff;
+    margin: 0.1em 0;
+    padding: 0.2em 0.7em;
+    border-radius:0.3rem;
+}
+
+.card-header .media::after {
+    display: block;
+    content: '';
+    position: absolute;
+    background-image: url(images/avatar.jpg);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    aspect-ratio: 1/1;
+    bottom: 2%;
+    right: -2%;
+    z-index: 1;
+}
+
+.card-type-course-live:before {
+    background-color: rgb(22, 199, 154);
+    content: "Онлайн Курс (На живо)";
+  }
+  
+  .card-type-course-recorded:before {
+    background: purple;
+    content: "Видео Курс";
+  }
+  
+  .card-type-course-workshop:before {
+    background: orange;
+    content: "Работилница";
+  }
+
+  @media (min-width: 900px) {
+    .card {
+        max-width: 400px;
+    }
+
+    .card-header .author {
+        bottom: 13%;
+        right: 13%;
+    }
+  }
