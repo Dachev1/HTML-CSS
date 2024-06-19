@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif
+}
+
+body, form, input, label {
+    font: inherit;
+}
+
+body {
+    background-color: #eee;
+    padding: 2em;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 1000px;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.field input {
+    background-color: #eee;
+    padding: 1.1em 1em;
+    border-radius: 0.3em;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease-in;
+}
+
+.field input:focus {
+    border-color: darkorange;
+}
+
+.field input[type="submit"] {
+    background-color: darkorange;
+    color: white;
+}
+
+.field input[type="text"] {
+    flex: 1;
+}
+
+.field input[type="email"] {
+    flex: 2;
+}
+
+.field input[type="submit"] {
+    flex: 1;
+}

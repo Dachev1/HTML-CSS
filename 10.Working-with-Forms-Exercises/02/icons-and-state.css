@@ -1,0 +1,137 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif
+}
+
+body, input, label {
+    font: inherit;
+}
+
+body {
+    background-color: #eee;
+    padding: 2em;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    flex-grow: 1;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 2em 3em 3em 3em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+.login-form .field:not(:last-child)  {
+    margin-bottom: 1.5em;
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.field input {
+    display: block;
+    width: 100%;
+    padding: 0.8em 0.14em;
+    border: 1.5px solid lightgray;
+    border-radius: 0.3em;
+    outline: none;
+    transition: border-color 0.3s ease-in
+}
+
+.field label {
+    font-weight: bold;
+    order: -1;
+}
+
+.field span {
+    font-size: 0.8em;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.login-form h2::after {
+    display: block;
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: #ccc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.field label::after {
+    display: block;
+    font-family: 'Font Awesome\ 6 Free';
+    position: absolute;
+    top: 0; right: 0;
+}
+
+
+.field .email::after {
+    content: '\f0e0';
+}
+
+.field .password::after {
+    content: '\f084';
+}
+
+.field input[type="submit"] {
+    background-color: darkorange;
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in
+}
+
+.field input:focus {
+    border-color: darkorange;
+}
+
+.field:not(:last-child)::before {
+    display: block;
+    content: "*";
+    color: red;
+    font-weight: bolder;
+    padding-left: 0.2em;
+}
+
+.field input:user-invalid {
+    border-color: red;
+}
+
+.field input:user-valid {
+    border-color: rgb(43, 181, 43);
+}
+
+.field input:focus ~ label {
+    color: darkorange;
+}
+
+.field input:user-invalid ~ label {
+    color: red;
+}
+
+
+.field input:user-valid ~ label {
+    color: rgb(43, 181, 43);
+}
+
+.field input[type="submit"]:hover {
+    background-color: rgb(192, 105, 0);
+}
+
