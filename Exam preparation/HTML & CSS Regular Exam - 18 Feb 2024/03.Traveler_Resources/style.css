@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 18px/1.5 Karla;
+}
+
+body {
+    font: inherit;
+    color: #fff;
+    background-image: url('images/poster.jpg');
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    background-position: center -20em;
+}
+
+body::before {
+    display: block;
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+h1, h2, h3 ,h4, h5, h6 {
+    font-family: 'Cormorant Infant';
+}
+
+.media {
+    max-width: 620px;
+    margin: 2em auto;
+}
+
+/* NAVIGATION */
+
+.site-header {
+    padding: 3em 10em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.site-header a.logo,
+.site-footer a.logo {
+    width: 5em;
+    height: 3em;
+    background: url('images/logo.webp') center no-repeat;
+    background-size: contain;
+    text-indent: -100vw;
+    overflow: hidden;
+}
+
+.site-nav ul {
+    display: flex;
+    gap: 3em;
+}
+
+.site-nav li {
+    display: block;
+    list-style: none outside;
+}
+
+.site-nav li a {
+    color: inherit;
+}
+
+/* SITE TITLE */
+.site-title {
+    margin-bottom: 5em;
+    text-align: center;
+    color: inherit;
+}
+
+.site-title h1 {
+    font-size: 5em;
+    white-space: nowrap;
+    margin-top: 2em;
+}
+
+.site-title p {
+    margin-top: 5em;
+    padding: 0 35em;
+}
+
+/* SECTIONS */
+.section-customer,
+.section-content {
+    color: #000;
+    background-color: #F8F0E9;
+    padding: 2.5em;
+}
+
+.section-support,
+.section-guide {
+    background-color: #E14747;
+    padding: 2em;
+    text-align: center;
+}
+
+.section-content h3 {
+    text-align: center;
+    font-size: 3em;
+    padding: 0 4em;
+}
+
+.section-guide h3 {
+    font-size: 3em;
+    margin: 2em 0;
+}
+
+.section-content p {
+    max-width: 48ch;
+    margin: 0 auto;
+    margin-top: 3em;
+    opacity: 0.8;
+}
+
+.section-content a {
+    padding: 0.5em 0.8em;
+    width: 160px;
+    text-align: center;
+    white-space: nowrap;
+    color: inherit;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 0.3em;
+    margin: 4em auto;
+}
+
+.section-guide a {
+    padding: 0.8em 1.5em;
+    border-radius: 1.5em;
+    color: #000;
+    background-color: #FAD87A;
+    width: 200px;
+    margin: 3em auto;
+}
+
+.section-content a.read {
+    margin-left: 10.5em;
+}
+
+.section-support strong {
+    font-size: 1.3em;
+}
+
+.section-customer span,
+.site-footer span{
+    display: block;
+    opacity: 0.7;
+    margin-bottom: 3em;
+}
+
+.section-customer p {
+    color: #3C3231;
+    width: 30ch;
+    font-family: 'Cormorant Infant';
+    line-height: 0.9;
+    font-size: 3.3em;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.section-support p + p {
+    margin-top: 2em;
+    padding: 0 18em;
+}
+
+.site-footer {
+    background-color: #352B2A;
+    padding: 3em 10em;
+}
+
+.site-footer p {
+    margin-top: 2em;
+    max-width: 48ch;
+}
+
+.site-footer span {
+    margin-top: 2em;
+    margin-bottom: 0;
+}

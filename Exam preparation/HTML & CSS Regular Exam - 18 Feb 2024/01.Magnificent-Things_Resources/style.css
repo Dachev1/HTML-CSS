@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.2 Inter, sans-serif;
+}
+
+body {
+    font: inherit;
+    background-color: #85DCFF;
+    color: 000;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.site-title {
+    flex: 0 0 35%}
+
+.media {
+    flex: 0 0 28%;
+    box-shadow: 0.5em 0.5em 1em 0.2em rgb(0, 0, 0, 1);
+}
+
+.site-title h1 {
+    max-width: 80%;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-wrap: wrap;
+}
+
+.site-title a {
+    display: inline-block;
+    margin-top: 3rem;
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 0.4em;
+    color: inherit;
+    background-color: #fff;
+    transition: background-color 0.3s ease-in,
+    color 0.3s ease-in;
+}
+
+.site-title a + a {
+    margin-left: 1em;
+}
+
+.site-title a.green {
+    background-color: #42AA59;
+    border: 2px solid #000;
+}
+
+.site-title a.green:hover {
+    background-color: #000;
+    color: #fff;
+}
