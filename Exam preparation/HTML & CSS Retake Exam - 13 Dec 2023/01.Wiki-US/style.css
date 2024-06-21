@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 'Agbalumo';
+}
+
+body {
+    font: inherit;
+    padding: 2em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.site {
+    max-width: 1000px;
+    border: 2px solid #000;
+    margin: 0 auto;
+}
+
+.site-header,
+.site-footer {
+    background-color: #D5EBEA;
+}
+
+.site-header {
+    padding-top: 1.5em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.site-main {
+    padding: 2.5em;
+    text-indent: 2em;
+    display: flex;
+    gap: 2em;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.site-footer {
+    font-size: 1.2em;
+    padding: 1em 3em;
+}
+
+.site-footer p + p {
+    margin-top: 1.5em;
+}
+
+.card {
+    padding: 1em;
+    border: 2px solid black;
+}
+
+.card p {
+    font-size: 0.9em;
+    width: 280px;
+}
+
+.card .media {
+    width: 280px;
+    height: 180px;
+    margin: 0 auto;
+    margin-bottom: 2.5em;
+}
+
+.site-main .content p {
+    margin-top: 1.5em;
+    font-size: 1.3em;
+    width: 86%;
+}
+
+.site-main .content p + p {
+    margin-top: 2em;
+}
+
+.site-header h1::after,
+.site-header p::after {
+    display: block;
+    content: '';
+    width: 900px;
+    height: 2px;
+    background-color: #000;
+    margin: 0 auto;
+    border-radius: 1em;
+}
+
+.site-main::after {
+    display: block;
+    content: 'Facts about United States';
+    width: 400px;
+    height: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2;
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+    bottom: -7%; left: 0;
+}
+
