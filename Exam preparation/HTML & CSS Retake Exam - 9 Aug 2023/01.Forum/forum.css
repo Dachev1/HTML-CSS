@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 15px/1.5 'Inter';
+}
+
+body {
+    background-image: url('images/background.jpg');
+    padding: 5em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+.forum-section {
+    max-width: 1200px;
+    display: flex;
+    gap: 2em;
+    margin: 0 auto;
+}
+
+.avatar {
+    width: 25%;
+    align-self: center;
+}
+
+.aside-col .avatar {
+    width: 30%;
+}
+
+.forum-section article,
+.forum-section aside {
+    background-color: #fff;
+    padding: 2em 2em;
+}
+
+.rows {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.aside-col {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article-row {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+    position: relative;
+}
+
+.content i {
+    margin-top: 0.5em;
+    display: block;
+    font-size: 4em;
+}
+
+.article-row .content {
+    align-self: flex-end;
+    flex: 0 1 55%;
+}
+
+.article-row .avatar {
+    margin-right: 1em;
+}
+
+.article-row .content p {
+    margin-top: 2em;
+    opacity: 0.7;
+}
+
+.aside-col .content p {
+    margin-top: 4em;
+    font-size: 1em;
+    opacity: 0.7;
+}
+
+.article-row .content h2 {
+    margin-top: 1em;
+}
+
+.aside-col .content i {
+    font-size: 6em;
+    margin-top: 0;
+}
+
+.wrapper .text .profession {
+    opacity: 0.5;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.aside-col .wrapper::before {
+    display: block;
+    content: '';
+    width: 300px;
+    height: 0.5px;
+    background-color: #ccc;
+    position: absolute;
+    top: -10%; left: -2%;
+    margin: 0 auto;
+}
+
+body::before {
+    display: block;
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(0, 0, 0, 0.4);
+    z-index: -1;
+  }
