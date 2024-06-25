@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.3 'Gochi Hand';
+}
+
+body {
+    font: inherit;
+    background-color: #E0E0E0;
+    padding: 2em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.postcard {
+    max-width: 990px;
+    background-color: #F9F9F9;
+    margin: 0 auto;
+    padding: 1.5em;
+    border-radius: 1em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.media {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    overflow: hidden;
+    position: relative;
+}
+
+.media-text {
+    max-width: 890px;
+    text-align: center;
+    background-color: #F4F4F4;
+    padding: 1em 1.4em 0 1.4em;
+    border-radius: 1em;
+    position: absolute;
+    bottom: 2.5%;
+    left: 3%;
+}
+
+.media-text p {
+    margin: 0.5em auto;
+}
+
+.postcard h2 {
+    color: #333;
+}
+
+.postcard p {
+    opacity: 0.6;
+    font-size: 1.1em;
+}
+
+.postcard-info {
+    margin-left: 2em;
+}
+
+.postcard-info h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+} 
+
+.postcard-info p {
+    margin-bottom: 1em;
+}
+
+.postcard-info::before {
+    display: block;
+    content: '';
+    width: 150%;
+    height: 1px;
+    background: #ccc;
+    margin-top: 1.5em;
+    position: relative;
+    left: -10%;
+}
